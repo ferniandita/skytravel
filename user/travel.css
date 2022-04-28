@@ -1,0 +1,358 @@
+body{
+	background-size: cover;
+	background-image: url('/project/img/skyscraper.jpg');
+}
+.akun{
+	background-color: black;
+	float: right;
+	width: 33.834%;
+	height: 65px;
+	margin-top: -10px;
+	margin-right: -10px;
+}
+.menu{
+	background-color: black;
+	float: left;
+	width: 33.834%;
+	height: 65px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+.logo{
+	background-image: url('/project/img/logo3.png');
+	width: 33.834%;
+	height: 65px;
+	margin-top: -10px;
+	display:inline-table ;
+	background-color: #000000;
+}
+.isi{
+	width: 100%;
+	height: 500px;
+	display: inline-table;
+	background-color: transparent;
+}
+.beranda{
+	width: 100%;
+	height: 600px;
+	background-color: #bdbdbd;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.akun ul{
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+	display: block;
+	list-style: none;
+	position: relative;
+}
+.menu a
+{
+  text-decoration: none;
+  font-family: 'Titillium';
+  color: #000000;
+  transition: color 0.3s ease;
+}
+.menu a:hover
+{
+  color: #0091EA;
+}
+.banner{
+	max-width: 810px;
+}
+.slide{
+	transition: opacity .5s ease-in;
+	display: block;
+	position: absolute;
+}
+.slide+.slide{
+	opacity: 0;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #ffffff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 150px;
+  height: 580px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ffffff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.container2 {
+  width: 100%;
+}
+.progressbar {
+  counter-reset: step;
+  font-family: 'Titillium';
+  font-size: 13px;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 25px;
+  height: 25px;
+  line-height : 25px;
+  border: 5px solid #9e9e9e;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #bdbdbd;
+}
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #9e9e9e;
+  top: 12.5px;
+  left: -50%;
+  z-index : -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: black;
+}
+.progressbar li.active:before {
+  border-color: #0091EA;
+  background-color: #0091EA;
+}
+.progressbar li.active + li:after {
+  background-color: #0091EA;
+}
+#container{
+	margin-left: 65px;
+}
+#promo{
+	width: 225px;
+	height: 225px;
+	background-color: #ffffff;
+	display: inline-table;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#card{
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	display: inline-table;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#card2{
+	width: 350px;
+	height: 350px;
+	background-color: #ffffff;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#card3{
+	width: 650px;
+	height: 450px;
+	background-color: #ffffff;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#review{
+	width: 45%;
+	height: 300px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#gambarpromo{
+	width: 215px;
+	height: 150px;
+}
+#title{
+	font-family: 'Titillium';
+	font-size: 35px;
+}
+#text{
+	font-family: 'Titillium';
+	font-style: bold;
+}
+#text2{
+	font-family: 'Titillium';
+	font-size: 25px;
+	font-style: bold;
+}
+#text3{
+	font-family: 'Titillium';
+	font-size: 20px;
+	font-style: bold;
+	color: #0091EA;
+	background-color: #000000;
+}
+#input{
+	font-family: 'Titillium';
+	width: 200px;
+	height: 25px;
+	border-color: transparent;
+}
+#input2{
+	font-family: 'Titillium';
+	width: 200px;
+	height: 30px;
+	border-color: transparent;
+}
+#input3{
+	font-family: 'Titillium';
+	width: 300px;
+	height: 30px;
+	border-color: transparent;
+	background-color: #e0e0e0;
+}
+#submit{
+	font-family: 'Titillium';
+	width: 150px;
+	height: 40px;
+	background-color: #000000;
+	font-size: 20px;
+	border-color: transparent;
+	color: #0091EA;
+	box-shadow: 0 2px 4px 0 #424242;
+}
+#submit:hover{
+		background-color: #0091EA;
+		color: #000000;
+		box-shadow: 0 4px 8px 0 #424242;
+}
+#link{
+	font-family: 'Titillium';
+	color: #000000;
+}
+#link:hover{
+	font-family: 'Titillium';
+	color: #0091EA;
+}
+#hello{
+	font-family: 'Titillium';
+	color: #ffffff;
+}
+#loginprofil{
+	font-family: 'Titillium';
+	color: #ffffff;
+}
+#loginprofil:hover{
+	font-family: 'Titillium';
+	color: #0091EA;
+}

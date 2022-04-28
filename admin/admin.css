@@ -1,0 +1,144 @@
+body{
+	background-size: cover;
+	background-image: url('/project/img/skyscraper.jpg');
+}
+.nav ul{
+    font-family: 'Titillium';
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: inline-table;
+    position: relative;
+}
+.nav ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #000000;
+    color: #0091
+}
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #0091EA;
+}   
+.nav ul li a:hover{
+    color: #FFFFFF;
+    background-color: #0091EA;
+}
+.nav ul li ul{
+    display: none;
+}
+.nav ul li:hover ul{
+    display: block;
+}
+.akun{
+	background-color: black;
+	float: right;
+	width: 25.71%;
+	height: 65px;
+	margin-top: -10px;
+	margin-right: -10px;
+}
+.akun ul{
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+	display: block;
+	list-style: none;
+	position: relative;
+}
+.menu{
+	background-color: black;
+	float: left;
+	width: 75.75%;
+	height: 65px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+.isi{
+	width: 100%;
+	height: 500px;
+	background-color: transparent;
+	display: inline-table;
+}
+#card2{
+	width: 350px;
+	height: 350px;
+	background-color: #ffffff;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-shadow: 0 4px 8px 0 #424242;
+}
+#title{
+	font-family: 'Titillium';
+	font-size: 35px;
+}
+#text{
+	font-family: 'Titillium';
+	font-style: bold;
+}
+#input{
+	font-family: 'Titillium';
+	width: 200px;
+	height: 25px;
+	border-color: transparent;
+}
+#input2{
+	font-family: 'Titillium';
+	width: 205px;
+	height: 30px;
+	border-color: transparent;
+}
+#input3{
+	font-family: 'Titillium';
+	width: 300px;
+	height: 30px;
+	border-color: transparent;
+	background-color: #e0e0e0;
+}
+#submit{
+	font-family: 'Titillium';
+	width: 150px;
+	height: 40px;
+	background-color: #000000;
+	font-size: 20px;
+	border-color: transparent;
+	color: #0091EA;
+	box-shadow: 0 2px 4px 0 #424242;
+}
+#submit:hover{
+		background-color: #0091EA;
+		color: #000000;
+		box-shadow: 0 4px 8px 0 #424242;
+}
+#link{
+	font-family: 'Titillium';
+	color: #000000;
+}
+#link:hover{
+	font-family: 'Titillium';
+	color: #0091EA;
+}
+#hello{
+	font-family: 'Titillium';
+	color: #ffffff;
+}
+#loginprofil{
+	font-family: 'Titillium';
+	color: #ffffff;
+}
+#loginprofil:hover{
+	font-family: 'Titillium';
+	color: #0091EA;
+}
